@@ -12,7 +12,7 @@ Once you include matrix.js, you will see a `window.matrix` object.
 
 The following functions are available to you:
 
-`ref(matrix)`: Input a matrix (2-d array). Make sure all rows have the same number of elements (columns). Returns a 2-d array of the matrix in row echelon form (REF)
+`ref(matrix)`: Input a matrix (2-d array). Make sure all rows have the same number of elements (columns). Returns a 2-d array of the matrix in row echelon form (REF). Note: `matrix` may be augmented or not. If it isn't augmented, don't use it in any of these other functions. They will not work. 
 
 `numberOfSolutions(ref)`: Input a matrix in REF form. The output from the above `ref(matrix)` function will work fine. It will return `0` if there are no solutions, `1` if there is a unique solution, or `Infinity` if there are infinite solutions
 
